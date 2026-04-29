@@ -1,6 +1,6 @@
 Source: treeland
 Priority: optional
-Maintainer: rewine <luhongxu@deepin.org>
+Maintainer: Lingmo OS Team <team@lingmo.org>
 Build-Depends: cmake (>= 3.25.0),
                debhelper-compat (= 13),
                ninja-build,
@@ -39,9 +39,9 @@ Build-Depends: cmake (>= 3.25.0),
                libmpv-dev,
 Standards-Version: 4.6.0
 Section: dde
-Homepage: https://github.com/linuxdeepin/treeland.git
-#Vcs-Browser: https://salsa.debian.org/debian/treeland
-#Vcs-Git: https://salsa.debian.org/debian/treeland.git
+Homepage: https://github.com/LingmoOS/treeland.git
+#Vcs-Browser: https://github.com/LingmoOS/treeland
+#Vcs-Git: https://github.com/LingmoOS/treeland.git
 Rules-Requires-Root: no
 
 Package: treeland

@@ -1,3 +1,9 @@
+treeland (0.8.6.lingmo.1) unstable; urgency=medium
+
+  * new release for Lingmo OS.
+
+ -- Lingmo OS Team <team@lingmo.org>  Wed, 29 Apr 2026 17:05:00 +0800
+
 treeland (0.8.5) unstable; urgency=medium
 
   * fix: correct CMake config name for submodule build
