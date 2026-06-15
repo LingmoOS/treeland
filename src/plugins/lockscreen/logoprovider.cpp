@@ -39,8 +39,8 @@ QString normalizeLogoUrl(const QString &logo)
 [[nodiscard]] QString LogoProvider::logo() noexcept
 {
     return normalizeLogoUrl(DSysInfo::distributionOrgLogo(DSysInfo::Distribution,
-                                                          DSysInfo::Transparent,
-                                                          ":/dsg/icons/logo.svg"));
+                                                          DSysInfo::Light,
+                                                          ":/assets/images/logo.svg"));
 }
 
 [[nodiscard]] QString LogoProvider::version() const noexcept
