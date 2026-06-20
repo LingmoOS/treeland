@@ -48,10 +48,10 @@ stdenv.mkDerivation (finalAttrs: {
   };
 
   postPatch = ''
-    for file in $(grep -rl "/usr/share/wallpapers/deepin/desktop.jpg")
+    for file in $(grep -rl "/usr/share/wallpapers/lingmo/default.jpg")
     do
       substituteInPlace $file \
-        --replace-fail "/usr/share/wallpapers/deepin/desktop.jpg" \
+        --replace-fail "/usr/share/wallpapers/lingmo/default.jpg" \
                 "${nixos-artwork.wallpapers.simple-blue}/share/backgrounds/nixos/nix-wallpaper-simple-blue.png"
     done
   '';

@@ -14,7 +14,7 @@
 #include <QMimeType>
 #include <QStringList>
 
-#define DEFAULT_WALLPAPER "/usr/share/wallpapers/deepin/deepin-default.jpg"
+#define DEFAULT_WALLPAPER "/usr/share/wallpapers/lingmo/default.jpg"
 
 enum class WallpaperType {
     Image,

@@ -89,7 +89,7 @@ OutputItem {
 
     Image {
         id: background
-        source: "file:///usr/share/wallpapers/deepin/desktop.jpg"
+        source: "file:///usr/share/wallpapers/lingmo/default.jpg"
         fillMode: Image.PreserveAspectCrop
         asynchronous: true
         anchors.fill: parent
