@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
 
     auto active = [unixFileDescriptor, type, &tmpFiles](QDBusConnection connection) {
         auto activateFd = [unixFileDescriptor, type, &connection, &tmpFiles] {
-            QDBusInterface updateFd("org.deepin.Compositor1",
+            QDBusInterface updateFd("org.lingmo.Compositor1",
                                     "/org/deepin/Compositor1",
                                     "org.deepin.Compositor1",
                                     connection);

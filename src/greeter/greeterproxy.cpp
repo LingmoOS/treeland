@@ -542,7 +542,7 @@ void GreeterProxy::readyRead()
 void GreeterProxy::updateAuthSocket()
 {
     QThreadPool::globalInstance()->start([this]() {
-        QDBusInterface manager("org.deepin.DisplayManager",
+        QDBusInterface manager("org.lingmo.DisplayManager",
                                "/org/deepin/DisplayManager",
                                "org.deepin.DisplayManager",
                                QDBusConnection::systemBus());

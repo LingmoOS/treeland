@@ -22,7 +22,7 @@ Before=dde-session-pre.target
 [Service]
 ExecCondition=/bin/sh -c 'test "$TREELAND_RUN_MODE" = "user" || exit 2'
 Type=dbus
-BusName=org.deepin.Compositor1
+BusName=org.lingmo.Compositor1
 UnsetEnvironment=DISPLAY
 UnsetEnvironment=WAYLAND_DISPLAY
 ExecStart=@CMAKE_INSTALL_FULL_BINDIR@/treeland

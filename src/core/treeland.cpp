@@ -263,9 +263,9 @@ private:
 class Compositor1Adaptor: public QDBusAbstractAdaptor
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "org.deepin.Compositor1")
+    Q_CLASSINFO("D-Bus Interface", "org.lingmo.Compositor1")
     Q_CLASSINFO("D-Bus Introspection",
-                "  <interface name=\"org.deepin.Compositor1\">\n"
+                "  <interface name=\"org.lingmo.Compositor1\">\n"
                 "    <method name=\"ActivateWayland\">\n"
                 "      <arg direction=\"in\" type=\"h\" name=\"fd\"/>\n"
                 "      <arg direction=\"out\" type=\"b\" name=\"result\"/>\n"
@@ -356,11 +356,11 @@ Treeland::Treeland()
     new Compositor1Adaptor(this);
 
     // init dbus after QML engine loaded.
-    QDBusConnection::systemBus().registerService("org.deepin.Compositor1");
-    QDBusConnection::systemBus().registerObject("/org/deepin/Compositor1", this);
+    QDBusConnection::systemBus().registerService("org.lingmo.Compositor1");
+    QDBusConnection::systemBus().registerObject("/org/lingmo/Compositor1", this);
 
-    QDBusConnection::sessionBus().registerService("org.deepin.Compositor1");
-    QDBusConnection::sessionBus().registerObject("/org/deepin/Compositor1", this);
+    QDBusConnection::sessionBus().registerService("org.lingmo.Compositor1");
+    QDBusConnection::sessionBus().registerObject("/org/lingmo/Compositor1", this);
 
 #ifdef QT_DEBUG
     QDir dir(QStringLiteral(TREELAND_PLUGINS_OUTPUT_PATH));
